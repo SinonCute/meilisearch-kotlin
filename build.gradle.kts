@@ -1,22 +1,22 @@
 plugins {
     base
-    kotlin("jvm") version "2.0.20"
-    kotlin("plugin.serialization") version "2.0.10"
+    kotlin("jvm") version "2.1.10"
+    kotlin("plugin.serialization") version "2.1.10"
     `maven-publish`
 
     // Linter
-    id("org.jmailen.kotlinter") version "4.5.0"
+    id("org.jmailen.kotlinter") version "5.0.1"
 }
 
 group = "sh.nemo"
-version = "0.5.0"
+version = "0.5.1"
 
 repositories {
     mavenCentral()
 }
 
 dependencies {
-    api(platform("io.ktor:ktor-bom:3.0.1"))
+    api(platform("io.ktor:ktor-bom:3.1.2"))
 
     api("io.ktor:ktor-client-core")
     api("io.ktor:ktor-client-cio")
@@ -24,7 +24,7 @@ dependencies {
     api("io.ktor:ktor-serialization-kotlinx-json")
     api("io.ktor:ktor-client-logging")
 
-    api("org.jetbrains.kotlinx:kotlinx-datetime:0.6.1")
+    api("org.jetbrains.kotlinx:kotlinx-datetime:0.6.2")
     api("ch.qos.logback:logback-classic:1.5.12")
 
     testImplementation(kotlin("test"))
