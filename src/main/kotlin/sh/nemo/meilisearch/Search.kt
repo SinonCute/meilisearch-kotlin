@@ -23,7 +23,7 @@ suspend inline fun <reified T> Meilisearch.search(
     highlightPreTag: String = "<em>",
     highlightPostTag: String = "</em>",
     showMatchesPosition: Boolean = false,
-    sort: String? = null,
+    sort: List<String>? = null,
     matchingStrategy: String = "last",
     showRankingScore: Boolean = false,
     showRankingScoreDetails: Boolean = false,

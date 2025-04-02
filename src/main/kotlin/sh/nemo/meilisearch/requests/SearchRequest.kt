@@ -20,7 +20,7 @@ data class SearchRequest(
     val highlightPreTag: String,
     val highlightPostTag: String,
     val showMatchesPosition: Boolean,
-    val sort: String?,
+    val sort: List<String>?,
     val matchingStrategy: String,
     val showRankingScore: Boolean,
     val showRankingScoreDetails: Boolean,
